@@ -8,7 +8,7 @@ export const Footer = () => {
                     © {new Date().getFullYear()} Copyright Text
                     <a
                         className='grey-text text-lighten-4 right'
-                        href='https://github.com/Vadim-Strakhov/react_movies_project'
+                        href='https://github.com/Vadim-Strakhov/react_showcase'
                     >
                         Repo
                     </a>

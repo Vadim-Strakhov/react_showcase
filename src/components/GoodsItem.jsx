@@ -11,13 +11,13 @@ export const GoodsItem = (props) => {
     } = props;
 
     const finalPrice = price.finalPrice;
-    const full_background = displayAssets[0].full_background;
+    const background = displayAssets[0].background;
 
     return (
         <div className='card'>
             <div className='card-image'>
                 <img
-                    src={full_background}
+                    src={background}
                     alt={displayName}
                 />
             </div>
