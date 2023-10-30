@@ -29,7 +29,7 @@ export const BasketItem = (props) => {
                 className='secondary-content'
                 onClick={() => removeFromBasket(mainId)}
             >
-                <i class='material-icons basket-delete'>close</i>
+                <i className='material-icons basket-delete'>close</i>
             </span>
         </li>
     );
