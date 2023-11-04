@@ -55,7 +55,7 @@ nav {
 	max-width: 95%;
 	max-height: 95%;
 	animation: show 500ms ease-in-out;
-	overflow: scroll;
+	overflow: auto;
 }
 
 .basket-close {
