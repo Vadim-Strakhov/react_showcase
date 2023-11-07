@@ -2,10 +2,10 @@ import { useContext } from 'react';
 import { ShopContext } from '../context';
 
 export const Cart = (props) => {
-	const { quantity = 0, handleBasketShow = Function.prototype } = props;
-	// const { order, handleBasketShow = Function.prototype } = useContext(ShopContext);
+	// const { quantity = 0, handleBasketShow = Function.prototype } = props;
+	const { order, handleBasketShow = Function.prototype } = useContext(ShopContext);
 
-	// const quantity = order.length;
+	const quantity = order.length;
 
 	return (
 		<div

@@ -30,7 +30,7 @@ export const reducer = (state, { type, payload }) => {
 			return {
 				...state,
 				order: newOrder,
-				alertName: payload.name,
+				alertName: payload.displayName,
 			};
 		case 'REMOVE_FROM_BASKET':
 			return {
