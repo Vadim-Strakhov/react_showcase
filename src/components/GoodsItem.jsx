@@ -1,7 +1,11 @@
 import React from 'react';
+import { useContext } from 'react';
+import { ShopContext } from '../context';
 
 export const GoodsItem = (props) => {
-	console.log('Props received in GoodsItem:', props);
+	// const { mainId, displayName, displayDescription, price, granted } = props;
+	// const { addToBasket } = useContext(ShopContext);
+
 	const { mainId, displayName, displayDescription, price, granted, addToBasket = Function.prototype } = props;
 
 	const finalPrice = price.finalPrice;
