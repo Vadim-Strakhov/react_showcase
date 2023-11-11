@@ -1,6 +1,6 @@
-import React from 'react';
-import { useContext } from 'react';
-import { ShopContext } from '../context';
+import React from "react";
+import { useContext } from "react";
+import { ShopContext } from "../context";
 
 export const GoodsItem = (props) => {
 	const { mainId, displayName, displayDescription, price, granted } = props;
@@ -33,7 +33,7 @@ export const GoodsItem = (props) => {
 				</button>
 				<span
 					className='right'
-					style={{ fontSize: '1.8rem' }}
+					style={{ fontSize: "1.8rem" }}
 				>
 					{finalPrice} руб
 				</span>

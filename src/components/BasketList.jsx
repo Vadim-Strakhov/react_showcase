@@ -1,6 +1,6 @@
-import { useContext } from 'react';
-import { ShopContext } from '../context';
-import { BasketItem } from './BasketItem';
+import { useContext } from "react";
+import { ShopContext } from "../context";
+import { BasketItem } from "./BasketItem";
 
 export const BasketList = (props) => {
 	// const { order = [], handleBasketShow = Function.prototype, removeFromBasket = Function.prototype, incQuantity, decQuantity } = props;

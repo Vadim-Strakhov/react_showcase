@@ -1,5 +1,5 @@
-import { useContext } from 'react';
-import { ShopContext } from '../context';
+import { useContext } from "react";
+import { ShopContext } from "../context";
 
 export const Cart = (props) => {
 	// const { quantity = 0, handleBasketShow = Function.prototype } = props;

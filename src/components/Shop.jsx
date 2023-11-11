@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import React, { useEffect, useContext } from 'react';
-import { API_KEY, API_URL } from '../config';
+import React, { useEffect, useContext } from "react";
+import { API_KEY, API_URL } from "../config";
 
-import { ShopContext } from '../context';
+import { ShopContext } from "../context";
 
-import { Preloader } from './Preloader';
-import { GoodsList } from './GoodsList';
-import { Cart } from './Cart';
-import { BasketList } from './BasketList';
-import { Alert } from './Alert';
+import { Preloader } from "./Preloader";
+import { GoodsList } from "./GoodsList";
+import { Cart } from "./Cart";
+import { BasketList } from "./BasketList";
+import { Alert } from "./Alert";
 
 export const Shop = () => {
 	const { loading, order, setGoods, isBasketShow, alertName } = useContext(ShopContext);

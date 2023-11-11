@@ -1,5 +1,5 @@
-import { useContext } from 'react';
-import { ShopContext } from '../context';
+import { useContext } from "react";
+import { ShopContext } from "../context";
 
 export const BasketItem = (props) => {
 	const {
@@ -22,8 +22,8 @@ export const BasketItem = (props) => {
 				onClick={() => decQuantity(mainId)}
 			>
 				remove
-			</i>{' '}
-			x{quantity} = {finalPrice * quantity} руб.{' '}
+			</i>{" "}
+			x{quantity} = {finalPrice * quantity} руб.{" "}
 			<i
 				className='material-icons basket-quantity'
 				onClick={() => incQuantity(mainId)}
