@@ -5,7 +5,7 @@ export const Header = () => {
     <nav className='green darken-1'>
       <div className='nav-wrapper'>
         <a
-          href='https://github.com/Vadim-Strakhov/react_showcase'
+          href='https://vadim-strakhov.github.io/react_showcase/'
           className='brand-logo'
         >
           React Showcase
@@ -15,7 +15,13 @@ export const Header = () => {
           className='right hide-on-med-and-down'
         >
           <li>
-            <a href='https://github.com/Vadim-Strakhov/react_showcase'>Repo</a>
+            <a
+              href='https://github.com/Vadim-Strakhov/react_showcase'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Repo
+            </a>
           </li>
         </ul>
       </div>
