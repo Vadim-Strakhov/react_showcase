@@ -1,9 +1,8 @@
-import { useEffect, useContext } from 'react';
-import { ShopContext } from '../context';
+import { useEffect, useContext } from "react";
+import { ShopContext } from "../context";
 
 export const Alert = (props) => {
-  // const { name = '', closeAlert = Function.prototype } = props;
-  const { alertName: displayName = '', closeAlert = Function.prototype } =
+  const { alertName: displayName = "", closeAlert = Function.prototype } =
     useContext(ShopContext);
 
   useEffect(() => {
@@ -16,8 +15,8 @@ export const Alert = (props) => {
   }, [name]);
 
   return (
-    <div id='toast-container'>
-      <div className='toast'>{displayName} добавлен в корзину</div>
+    <div id="toast-container">
+      <div className="toast">{displayName} добавлен в корзину</div>
     </div>
   );
 };
