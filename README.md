@@ -1,4 +1,4 @@
-## Приложение "Витрина"
+## React приложение "Витрина"
 
  - ### Проект доступен по ссылке - https://vadim-strakhov.github.io/react_showcase/
  - ### В проекте использован бесплатный API - https://fortniteapi.io/
