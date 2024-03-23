@@ -22,7 +22,7 @@ export const Shop = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log(data.shop);
-        data.shop && setGoods(data.shop.slice(45, 70));
+        data.shop && setGoods(data.shop.slice(50, 70));
       });
   }, []);
 
