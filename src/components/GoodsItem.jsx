@@ -3,11 +3,12 @@ import { useContext } from "react";
 import { ShopContext } from "../context";
 
 export const GoodsItem = (props) => {
-  const { mainId, displayName, displayDescription, price, granted } = props;
+  const { mainId, displayName, displayDescription, price, displayAssets } =
+    props;
   const { addToBasket } = useContext(ShopContext);
 
   const finalPrice = price.finalPrice;
-  const background = granted[0].images.full_background;
+  const background = displayAssets[0].full_background;
 
   return (
     <div className="card">

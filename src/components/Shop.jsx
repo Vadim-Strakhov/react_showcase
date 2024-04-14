@@ -21,8 +21,13 @@ export const Shop = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.shop);
-        data.shop && setGoods(data.shop.slice(50, 70));
+        // console.log(data.shop.filter((item) => !item.mainId.startsWith("SID")));
+        data.shop &&
+          setGoods(
+            data.shop
+              .filter((item) => !item.mainId.startsWith("SID"))
+              .slice(20, 36)
+          );
       });
   }, []);
 
