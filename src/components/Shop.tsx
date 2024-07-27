@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 import { API_KEY, API_URL } from "../config";
 
 import { ShopContext } from "../context";
@@ -8,9 +8,10 @@ import { GoodsList } from "./GoodsList";
 import { Cart } from "./Cart";
 import { BasketList } from "./BasketList";
 import { Alert } from "./Alert";
+import { IShop } from "../types";
 
 export const Shop = () => {
-  const { loading, order, setGoods, isBasketShow, alertName } =
+  const { loading, setGoods, isBasketShow, alertName } =
     useContext(ShopContext);
 
   useEffect(function getGoods() {
@@ -25,7 +26,7 @@ export const Shop = () => {
         data.shop &&
           setGoods(
             data.shop
-              .filter((item) => !item.mainId.startsWith("SID"))
+              .filter((item: IShop) => !item.mainId.startsWith("SID"))
               .slice(20, 36)
           );
       });
@@ -33,7 +34,7 @@ export const Shop = () => {
 
   return (
     <main className="container content">
-      <Cart quantity={order.length} />
+      <Cart />
       {loading ? <Preloader /> : <GoodsList />}
       {isBasketShow && <BasketList />}
       {alertName && <Alert />}

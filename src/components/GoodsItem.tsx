@@ -1,14 +1,15 @@
-import React from "react";
+import { FC } from "react";
 import { useContext } from "react";
 import { ShopContext } from "../context";
+import { BasketItems } from "../types";
 
-export const GoodsItem = (props) => {
+export const GoodsItem: FC<BasketItems> = (props) => {
   const { mainId, displayName, displayDescription, price, displayAssets } =
     props;
   const { addToBasket } = useContext(ShopContext);
 
-  const finalPrice = price.finalPrice;
-  const background = displayAssets[0].full_background;
+  const finalPrice = price?.finalPrice;
+  const background = displayAssets?.[0].full_background;
 
   return (
     <div className="card">

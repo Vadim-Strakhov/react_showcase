@@ -1,7 +1,8 @@
-import { useContext } from "react";
+import { FC, useContext } from "react";
 import { ShopContext } from "../context";
+import { BasketItems } from "../types";
 
-export const BasketItem = (props) => {
+export const BasketItem: FC<BasketItems> = (props) => {
   const { mainId, displayName, finalPrice, quantity } = props;
 
   const { removeFromBasket, incQuantity, decQuantity } =
@@ -16,7 +17,7 @@ export const BasketItem = (props) => {
       >
         remove
       </i>{" "}
-      x{quantity} = {finalPrice * quantity} руб.{" "}
+      x{quantity} = {finalPrice! * quantity!} руб.{" "}
       <i
         className="material-icons basket-quantity"
         onClick={() => incQuantity(mainId)}

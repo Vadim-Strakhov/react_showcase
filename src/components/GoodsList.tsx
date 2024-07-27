@@ -1,9 +1,8 @@
-import React from "react";
 import { GoodsItem } from "./GoodsItem";
 import { useContext } from "react";
 import { ShopContext } from "../context";
 
-export const GoodsList = (props) => {
+export const GoodsList = () => {
   const { goods = [] } = useContext(ShopContext);
 
   if (!goods.length) {
